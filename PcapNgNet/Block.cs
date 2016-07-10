@@ -8,12 +8,13 @@ namespace PcapNgNet
         public BlockType Type { get; set; }
 
         [FieldOrder(1)]
-        [FieldValue("Length2")]
+        //[FieldValue("Length2")]
         public int Length { get; set; }
 
         [FieldOrder(2)]
         [FieldLength("Length", ConverterType = typeof(SummingValueConverter), ConverterParameter = -12)]
-        //[FieldLength("Length2", ConverterType = typeof(SummingValueConverter), ConverterParameter = -12)]
+        [FieldLength("Length2", ConverterType = typeof(SummingValueConverter), ConverterParameter = -12, 
+            BindingMode = BindingMode.OneWayToSource)]
         [Subtype("Type", BlockType.SectionHeader, typeof(SectionHeaderBlockBody))]
         [Subtype("Type", BlockType.InterfaceDescrption, typeof(InterfaceDescriptionBlockBody))]
         [Subtype("Type", BlockType.EnhancedPacket, typeof(EnhancedPacketBlockBody))]
