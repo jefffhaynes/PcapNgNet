@@ -19,6 +19,7 @@ namespace PcapNgNet
         [Subtype("Type", BlockType.EnhancedPacket, typeof(EnhancedPacketBlockBody))]
         [Subtype("Type", BlockType.SimplePacket, typeof(SimplePacketBlockBody))]
         [Subtype("Type", BlockType.NameResolution, typeof(NameResolutionBlockBody))]
+        [Subtype("Type", BlockType.InterfaceStatistics, typeof(InterfaceStatisticsBlockBody))]
         public BlockBody Body { get; set; }
 
         [FieldOrder(3)]

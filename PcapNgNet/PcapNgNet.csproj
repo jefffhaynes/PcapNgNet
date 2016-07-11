@@ -39,6 +39,7 @@
     <Compile Include="BlockType.cs" />
     <Compile Include="EnhancedPacketBlockBody.cs" />
     <Compile Include="InterfaceDescriptionBlockBody.cs" />
+    <Compile Include="InterfaceStatisticsBlockBody.cs" />
     <Compile Include="Ipv4Address.cs" />
     <Compile Include="Ipv6Address.cs" />
     <Compile Include="NameResolutionBlockBody.cs" />
