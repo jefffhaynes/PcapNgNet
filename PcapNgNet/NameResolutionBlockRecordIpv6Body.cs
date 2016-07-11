@@ -3,7 +3,7 @@ using BinarySerialization;
 
 namespace PcapNgNet
 {
-    public class NameResolutionBlockRecordIpv6Body
+    public class NameResolutionBlockRecordIpv6Body : NameResolutionBlockRecordBody
     {
         [FieldOrder(0)]
         public Ipv6Address Address { get; set; }
