@@ -8,7 +8,6 @@ namespace PcapNgNet
         public BlockType Type { get; set; }
 
         [FieldOrder(1)]
-        //[FieldValue("Length2")]
         public int Length { get; set; }
 
         [FieldOrder(2)]
@@ -18,6 +17,8 @@ namespace PcapNgNet
         [Subtype("Type", BlockType.SectionHeader, typeof(SectionHeaderBlockBody))]
         [Subtype("Type", BlockType.InterfaceDescrption, typeof(InterfaceDescriptionBlockBody))]
         [Subtype("Type", BlockType.EnhancedPacket, typeof(EnhancedPacketBlockBody))]
+        [Subtype("Type", BlockType.SimplePacket, typeof(SimplePacketBlockBody))]
+        [Subtype("Type", BlockType.NameResolution, typeof(NameResolutionBlockBody))]
         public BlockBody Body { get; set; }
 
         [FieldOrder(3)]
