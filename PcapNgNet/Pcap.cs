@@ -4,6 +4,6 @@ namespace PcapNgNet
 {
     public class Pcap
     {
-        public List<PcapSection> Sections { get; set; }
+        public List<Block> Blocks { get; set; }
     }
 }

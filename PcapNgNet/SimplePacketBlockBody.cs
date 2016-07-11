@@ -8,7 +8,7 @@ namespace PcapNgNet
         public int PacketLength { get; set; }
 
         [FieldOrder(1)]
-        [FieldLength("PacketLength")]
+        //[FieldLength("PacketLength")]
         public byte[] PacketData { get; set; }
     }
 }

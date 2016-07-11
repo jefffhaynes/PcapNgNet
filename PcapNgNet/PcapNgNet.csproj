@@ -49,9 +49,7 @@
     <Compile Include="NameResolutionBlockRecordType.cs" />
     <Compile Include="PacketBlockBody.cs" />
     <Compile Include="Pcap.cs" />
-    <Compile Include="PcapSection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SectionHeaderBlock.cs" />
     <Compile Include="SectionHeaderBlockBody.cs" />
     <Compile Include="SimplePacketBlockBody.cs" />
     <Compile Include="SummingValueConverter.cs" />

@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcapNgNet", "PcapNgNet\PcapNgNet.csproj", "{965779EF-C0AD-4751-9C7A-812A93F8AC05}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcapNgNet.Tester", "PcapNgNet.Tester\PcapNgNet.Tester.csproj", "{5FD46F67-3CF0-42AF-9B70-1E8077C9E156}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcapNgNet.Test", "PcapNgNet.Test\PcapNgNet.Test.csproj", "{1E0BD000-B402-4222-AE04-D892A010FDE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5FD46F67-3CF0-42AF-9B70-1E8077C9E156}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FD46F67-3CF0-42AF-9B70-1E8077C9E156}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FD46F67-3CF0-42AF-9B70-1E8077C9E156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E0BD000-B402-4222-AE04-D892A010FDE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E0BD000-B402-4222-AE04-D892A010FDE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E0BD000-B402-4222-AE04-D892A010FDE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E0BD000-B402-4222-AE04-D892A010FDE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
