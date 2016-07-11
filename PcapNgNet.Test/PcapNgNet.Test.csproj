@@ -112,12 +112,8 @@
     <None Include="Files\Basic\test016.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test017.pcapng">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Files\Basic\test018.pcapng">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="Files\Basic\test017.pcapng" />
+    <None Include="Files\Basic\test018.pcapng" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
