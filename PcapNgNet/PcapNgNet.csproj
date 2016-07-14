@@ -57,8 +57,8 @@
     <Compile Include="SummingValueConverter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="BinarySerializer, Version=5.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\BinarySerializer.5.2\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\BinarySerializer.dll</HintPath>
+    <Reference Include="BinarySerializer, Version=5.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BinarySerializer.5.2.1\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\BinarySerializer.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
