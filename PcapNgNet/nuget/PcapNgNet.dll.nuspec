@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>0.1</version>
+    <version>$version$</version>
     <authors>Jeff Haynes</authors>
     <owners></owners>
     <projectUrl>https://github.com/jefffhaynes/PcapNgNet</projectUrl>
@@ -11,5 +11,8 @@
     <releaseNotes>Initial release.</releaseNotes>
     <tags>Pcap Pcapng</tags>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+      <dependencies>
+      <dependency id="BinarySerializer" version="5.2.1" />
+    </dependencies>
   </metadata>
 </package>

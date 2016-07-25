@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using BinarySerialization;
+using PcapNgNet.Options;
 
 namespace PcapNgNet
 {
@@ -10,6 +11,7 @@ namespace PcapNgNet
         public List<NameResolutionBlockRecord> Records { get; set; }
 
         [FieldOrder(1)]
-        public byte[] Options { get; set; }
+        [FieldAlignment(4)]
+        public OptionSection<OptionCode> Options { get; set; }
     }
 }

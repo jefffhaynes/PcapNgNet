@@ -11,6 +11,7 @@ namespace PcapNgNet
         public int Length { get; set; }
 
         [FieldOrder(2)]
+        [FieldAlignment(4)]
         [FieldLength("Length", ConverterType = typeof(SummingValueConverter), ConverterParameter = -12)]
         [FieldLength("Length2", ConverterType = typeof(SummingValueConverter), ConverterParameter = -12, 
             BindingMode = BindingMode.OneWayToSource)]

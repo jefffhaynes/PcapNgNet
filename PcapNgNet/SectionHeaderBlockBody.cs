@@ -1,4 +1,5 @@
 ﻿using BinarySerialization;
+using PcapNgNet.Options;
 
 namespace PcapNgNet
 {
@@ -15,9 +16,9 @@ namespace PcapNgNet
 
         [FieldOrder(3)]
         public long Length { get; set; }
-
-        // TODO real options
+        
         [FieldOrder(4)]
-        public byte[] Options { get; set; }
+        [FieldAlignment(4)]
+        public OptionSection<SectionOptionCode> Options { get; set; }
     }
 }

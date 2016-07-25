@@ -1,20 +1,22 @@
-﻿using BinarySerialization;
+﻿using System.Collections.Generic;
+using BinarySerialization;
+using PcapNgNet.Options;
 
 namespace PcapNgNet
 {
     public class InterfaceDescriptionBlockBody : BlockBody
     {
         [FieldOrder(0)]
-        public ushort LinkType { get; set; }
+        public LinkType LinkType { get; set; }
 
         [FieldOrder(1)]
         public ushort Reserved { get; set; }
 
         [FieldOrder(2)]
         public int Length { get; set; }
-
-        // TODO real options
+        
         [FieldOrder(3)]
-        public byte[] Options { get; set; }
+        [FieldAlignment(4)]
+        public OptionSection<InterfaceOptionCode> Options { get; set; }
     }
 }

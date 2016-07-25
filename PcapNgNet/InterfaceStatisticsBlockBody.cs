@@ -1,4 +1,6 @@
-﻿using BinarySerialization;
+﻿using System.Collections.Generic;
+using BinarySerialization;
+using PcapNgNet.Options;
 
 namespace PcapNgNet
 {
@@ -14,6 +16,7 @@ namespace PcapNgNet
         public int TimestampLow { get; set; }
 
         [FieldOrder(3)]
-        public byte[] Options { get; set; }
+        [FieldAlignment(4)]
+        public OptionSection<OptionCode> Options { get; set; }
     }
 }

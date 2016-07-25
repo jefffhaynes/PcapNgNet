@@ -107,6 +107,12 @@ namespace PcapNgNet.Test
         {
             PrintIndent(e.Context.Depth);
             var value = e.Value ?? "null";
+
+            if (value is byte[])
+            {
+                value = BitConverter.ToString((byte[])value);
+            }
+
             Debug.WriteLine("D-End: {0} ({1}) @ {2}", e.MemberName, value, e.Offset);
         }
     }
