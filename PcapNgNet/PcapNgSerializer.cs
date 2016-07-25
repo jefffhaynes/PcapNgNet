@@ -7,8 +7,8 @@ namespace PcapNgNet
     public class PcapNgSerializer
     {
         private readonly BinarySerializer _serializer = new BinarySerializer();
-        private const int LittleEndiannessMagic = 0x1A2B3C4D;
-        private const int BigEndiannessMagic = 0x4D3C2B1A;
+        private const uint LittleEndiannessMagic = 0x1A2B3C4D;
+        private const uint BigEndiannessMagic = 0x4D3C2B1A;
 
         public BinarySerializer Serializer => _serializer;
 
