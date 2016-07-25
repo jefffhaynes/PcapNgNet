@@ -11,7 +11,7 @@
     <releaseNotes>Better option support.</releaseNotes>
     <tags>Pcap Pcapng</tags>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
-      <dependencies>
+    <dependencies>
       <dependency id="BinarySerializer" version="5.3" />
     </dependencies>
   </metadata>
