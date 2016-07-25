@@ -84,10 +84,10 @@ namespace PcapNgNet.Test
                 int expectedCount = expected.Read(expectedBlock, 0, blockSize);
                 int actualCount = actual.Read(actualBlock, 0, blockSize);
 
-                //if (expectedCount != actualCount)
-                //{
-                //    Assert.Fail($"Expected count was {expectedCount} but actual count was {actualCount}.");
-                //}
+                if (expectedCount != actualCount)
+                {
+                    Assert.Fail($"Expected count was {expectedCount} but actual count was {actualCount}.");
+                }
 
                 if (expectedCount == 0)
                     return;
