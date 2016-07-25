@@ -37,7 +37,6 @@
     <Compile Include="Block.cs" />
     <Compile Include="BlockBody.cs" />
     <Compile Include="BlockType.cs" />
-    <Compile Include="RoundUpConverter.cs" />
     <Compile Include="EnhancedPacketBlockBody.cs" />
     <Compile Include="InterfaceDescriptionBlockBody.cs" />
     <Compile Include="InterfaceStatisticsBlockBody.cs" />
@@ -56,9 +55,10 @@
     <Compile Include="Options\SectionOptionCode.cs" />
     <Compile Include="Options\OptionCode.cs" />
     <Compile Include="Options\OptionSection.cs" />
-    <Compile Include="Pcap.cs" />
+    <Compile Include="PcapNg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SectionHeaderBlockBody.cs" />
+    <Compile Include="Serializer.cs" />
     <Compile Include="SimplePacketBlockBody.cs" />
     <Compile Include="SummingValueConverter.cs" />
   </ItemGroup>

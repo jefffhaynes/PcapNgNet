@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using BinarySerialization;
+﻿using BinarySerialization;
 using PcapNgNet.Options;
 
 namespace PcapNgNet

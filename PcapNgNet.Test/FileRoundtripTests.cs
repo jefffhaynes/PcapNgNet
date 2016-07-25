@@ -11,19 +11,37 @@ namespace PcapNgNet.Test
     public class FileRoundtripTests
     {
         [TestMethod]
-        public void RoundtripBasicFiles()
+        public void RoundtripBasicLeFiles()
         {
-            RoundtripFiles("Files//Basic");
+            RoundtripFiles("Files//LE//Basic");
         }
 
-        private void RoundtripFiles(string path)
+        [TestMethod]
+        public void RoundtripAdvancedLeFiles()
         {
-            var serializer = new BinarySerializer();
+            RoundtripFiles("Files//LE//Advanced", true);
+        }
 
-            serializer.MemberSerializing += OnMemberSerializing;
-            serializer.MemberSerialized += OnMemberSerialized;
-            serializer.MemberDeserializing += OnMemberDeserializing;
-            serializer.MemberDeserialized += OnMemberDeserialized;
+        //[TestMethod]
+        //public void RoundtripBasicBeFiles()
+        //{
+        //    RoundtripFiles("Files//BE//Basic");
+        //}
+
+        //[TestMethod]
+        //public void RoundtripAdvancedBeFiles()
+        //{
+        //    RoundtripFiles("Files//BE//Advanced", true);
+        //}
+
+        private void RoundtripFiles(string path, bool ignoreSerializationErrors = false)
+        {
+            var serializer = new PcapNgSerializer();
+
+            serializer.Serializer.MemberSerializing += OnMemberSerializing;
+            serializer.Serializer.MemberSerialized += OnMemberSerialized;
+            serializer.Serializer.MemberDeserializing += OnMemberDeserializing;
+            serializer.Serializer.MemberDeserialized += OnMemberDeserialized;
 
             var files = Directory.EnumerateFiles(path);
 
@@ -33,15 +51,23 @@ namespace PcapNgNet.Test
 
                 using (var stream = new FileStream(file, FileMode.Open, FileAccess.Read))
                 {
-                    var pcap = serializer.Deserialize<Pcap>(stream);
+                    var pcap = serializer.Deserialize(stream);
 
-                    var memStream = new MemoryStream();
-                    serializer.Serialize(memStream, pcap);
+                    try
+                    {
+                        var memStream = new MemoryStream();
+                        serializer.Serialize(memStream, pcap);
 
-                    stream.Position = 0;
-                    memStream.Position = 0;
+                        stream.Position = 0;
+                        memStream.Position = 0;
 
-                    AssertAreEqual(stream, memStream);
+                        AssertAreEqual(stream, memStream);
+                    }
+                    catch
+                    {
+                        if (!ignoreSerializationErrors)
+                            throw;
+                    }
                 }
             }
         }

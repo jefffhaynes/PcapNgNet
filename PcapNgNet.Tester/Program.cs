@@ -17,7 +17,7 @@ namespace PcapNgNet.Tester
 
             using (var stream = new FileStream(args[0], FileMode.Open, FileAccess.Read))
             {
-                var pcap = serializer.Deserialize<Pcap>(stream);
+                var pcap = serializer.Deserialize<PcapNg>(stream);
             }
         }
 

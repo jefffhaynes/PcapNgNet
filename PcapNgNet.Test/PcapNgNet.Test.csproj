@@ -64,78 +64,175 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Files\Basic\test001.pcapng">
+    <None Include="Files\BE\Advanced\test100.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test002.pcapng">
+    <None Include="Files\BE\Advanced\test101.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test003.pcapng">
+    <None Include="Files\BE\Advanced\test102.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test004.pcapng">
+    <None Include="Files\BE\Basic\test001.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test005.pcapng">
+    <None Include="Files\BE\Basic\test002.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test006.pcapng">
+    <None Include="Files\BE\Basic\test003.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test007.pcapng">
+    <None Include="Files\BE\Basic\test004.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test008.pcapng">
+    <None Include="Files\BE\Basic\test005.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test009.pcapng">
+    <None Include="Files\BE\Basic\test006.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test010.pcapng">
+    <None Include="Files\BE\Basic\test007.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test011.pcapng">
+    <None Include="Files\BE\Basic\test008.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test012.pcapng">
+    <None Include="Files\BE\Basic\test009.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test013.pcapng">
+    <None Include="Files\BE\Basic\test010.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test014.pcapng">
+    <None Include="Files\BE\Basic\test011.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test015.pcapng">
+    <None Include="Files\BE\Basic\test012.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test016.pcapng">
+    <None Include="Files\BE\Basic\test013.pcapng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Files\Basic\test017.pcapng" />
-    <None Include="Files\Basic\test018.pcapng" />
+    <None Include="Files\BE\Basic\test014.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\BE\Basic\test015.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\BE\Basic\test016.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\BE\Basic\test017.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\BE\Basic\test018.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Advanced\test100.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Advanced\test101.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Advanced\test102.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test001.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test002.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test003.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test004.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test005.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test006.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test007.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test008.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test009.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test010.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test011.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test012.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test013.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test014.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test015.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test016.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Basic\test017.pcapng" />
+    <None Include="Files\LE\Basic\test018.pcapng" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Files\Basic\test001.txt" />
-    <Content Include="Files\Basic\test002.txt" />
-    <Content Include="Files\Basic\test003.txt" />
-    <Content Include="Files\Basic\test004.txt" />
-    <Content Include="Files\Basic\test005.txt" />
-    <Content Include="Files\Basic\test006.txt" />
-    <Content Include="Files\Basic\test007.txt" />
-    <Content Include="Files\Basic\test008.txt" />
-    <Content Include="Files\Basic\test009.txt" />
-    <Content Include="Files\Basic\test010.txt" />
-    <Content Include="Files\Basic\test011.txt" />
-    <Content Include="Files\Basic\test012.txt" />
-    <Content Include="Files\Basic\test013.txt" />
-    <Content Include="Files\Basic\test014.txt" />
-    <Content Include="Files\Basic\test015.txt" />
-    <Content Include="Files\Basic\test016.txt" />
-    <Content Include="Files\Basic\test017.txt" />
-    <Content Include="Files\Basic\test018.txt" />
+    <Content Include="Files\BE\Advanced\test100.txt" />
+    <Content Include="Files\BE\Advanced\test101.txt" />
+    <Content Include="Files\BE\Advanced\test102.txt" />
+    <Content Include="Files\BE\Basic\test001.txt" />
+    <Content Include="Files\BE\Basic\test002.txt" />
+    <Content Include="Files\BE\Basic\test003.txt" />
+    <Content Include="Files\BE\Basic\test004.txt" />
+    <Content Include="Files\BE\Basic\test005.txt" />
+    <Content Include="Files\BE\Basic\test006.txt" />
+    <Content Include="Files\BE\Basic\test007.txt" />
+    <Content Include="Files\BE\Basic\test008.txt" />
+    <Content Include="Files\BE\Basic\test009.txt" />
+    <Content Include="Files\BE\Basic\test010.txt" />
+    <Content Include="Files\BE\Basic\test011.txt" />
+    <Content Include="Files\BE\Basic\test012.txt" />
+    <Content Include="Files\BE\Basic\test013.txt" />
+    <Content Include="Files\BE\Basic\test014.txt" />
+    <Content Include="Files\BE\Basic\test015.txt" />
+    <Content Include="Files\BE\Basic\test016.txt" />
+    <Content Include="Files\BE\Basic\test017.txt" />
+    <Content Include="Files\BE\Basic\test018.txt" />
+    <Content Include="Files\LE\Advanced\test100.txt" />
+    <Content Include="Files\LE\Advanced\test101.txt" />
+    <Content Include="Files\LE\Advanced\test102.txt" />
+    <Content Include="Files\LE\Basic\test001.txt" />
+    <Content Include="Files\LE\Basic\test002.txt" />
+    <Content Include="Files\LE\Basic\test003.txt" />
+    <Content Include="Files\LE\Basic\test004.txt" />
+    <Content Include="Files\LE\Basic\test005.txt" />
+    <Content Include="Files\LE\Basic\test006.txt" />
+    <Content Include="Files\LE\Basic\test007.txt" />
+    <Content Include="Files\LE\Basic\test008.txt" />
+    <Content Include="Files\LE\Basic\test009.txt" />
+    <Content Include="Files\LE\Basic\test010.txt" />
+    <Content Include="Files\LE\Basic\test011.txt" />
+    <Content Include="Files\LE\Basic\test012.txt" />
+    <Content Include="Files\LE\Basic\test013.txt" />
+    <Content Include="Files\LE\Basic\test014.txt" />
+    <Content Include="Files\LE\Basic\test015.txt" />
+    <Content Include="Files\LE\Basic\test016.txt" />
+    <Content Include="Files\LE\Basic\test017.txt" />
+    <Content Include="Files\LE\Basic\test018.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

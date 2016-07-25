@@ -11,6 +11,7 @@ namespace PcapNgNet
         public ushort Length { get; set; }
 
         [FieldOrder(2)]
+        [FieldAlignment(4)]
         [FieldLength("Length")]
         [Subtype("Type", NameResolutionBlockRecordType.EndOfRecord, typeof(NameResolutionBlockRecordEndBody))]
         [Subtype("Type", NameResolutionBlockRecordType.Ipv4Record, typeof(NameResolutionBlockRecordIpv4Body))]
