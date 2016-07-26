@@ -14,19 +14,23 @@ namespace PcapNgNet
 
         public PcapNgSerializer()
         {
-            _serializer.MemberDeserialized += (sender, args) =>
-            {
-                if (args.MemberName == "ByteOrderMagic")
-                {
-                    var endiannessMagic = Convert.ToUInt32(args.Value);
+        }
 
-                    if (endiannessMagic == LittleEndiannessMagic)
-                        _serializer.Endianness = Endianness.Little;
-                    else if (endiannessMagic == BigEndiannessMagic)
-                        throw new NotSupportedException("Big endian files not supported");
-                    else throw new InvalidDataException($"Endianness value {endiannessMagic} is not valid");
-                }
-            };
+        private void SerializerOnMemberDeserialized(object sender, MemberSerializedEventArgs memberSerializedEventArgs)
+        {
+            if (memberSerializedEventArgs.MemberName == "ByteOrderMagic")
+            {
+                var endiannessMagic = Convert.ToUInt32(memberSerializedEventArgs.Value);
+
+                if (endiannessMagic == LittleEndiannessMagic)
+                    _serializer.Endianness = Endianness.Little;
+                else if (endiannessMagic == BigEndiannessMagic)
+                    throw new NotSupportedException("Big endian files not supported");
+                else throw new InvalidDataException($"Endianness value {endiannessMagic} is not valid");
+
+                // disconnect for performance
+                Serializer.MemberDeserialized -= SerializerOnMemberDeserialized;
+            }
         }
 
         public void Serialize(Stream stream, PcapNg pcapNg)
@@ -36,7 +40,10 @@ namespace PcapNgNet
 
         public PcapNg Deserialize(Stream stream)
         {
-            return _serializer.Deserialize<PcapNg>(stream);
+            _serializer.MemberDeserialized += SerializerOnMemberDeserialized;
+            var pcapNg = _serializer.Deserialize<PcapNg>(stream);
+            Serializer.MemberDeserialized -= SerializerOnMemberDeserialized;
+            return pcapNg;
         }
     }
 }
