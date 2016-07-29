@@ -22,17 +22,17 @@ namespace PcapNgNet.Test
             RoundtripFiles("Files//LE//Advanced", true);
         }
 
-        //[TestMethod]
-        //public void RoundtripBasicBeFiles()
-        //{
-        //    RoundtripFiles("Files//BE//Basic");
-        //}
+        [TestMethod]
+        public void RoundtripBasicBeFiles()
+        {
+            RoundtripFiles("Files//BE//Basic");
+        }
 
-        //[TestMethod]
-        //public void RoundtripAdvancedBeFiles()
-        //{
-        //    RoundtripFiles("Files//BE//Advanced", true);
-        //}
+        [TestMethod]
+        public void RoundtripAdvancedBeFiles()
+        {
+            RoundtripFiles("Files//BE//Advanced", true);
+        }
 
         private void RoundtripFiles(string path, bool ignoreSerializationErrors = false)
         {

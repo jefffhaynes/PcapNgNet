@@ -34,9 +34,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="SectionHeaderBlock.cs" />
     <Compile Include="Block.cs" />
     <Compile Include="BlockBody.cs" />
     <Compile Include="BlockType.cs" />
+    <Compile Include="EndiannessConverter.cs" />
     <Compile Include="EnhancedPacketBlockBody.cs" />
     <Compile Include="InterfaceDescriptionBlockBody.cs" />
     <Compile Include="InterfaceStatisticsBlockBody.cs" />
@@ -70,8 +72,8 @@
     <None Include="nuget\nuget.exe" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="BinarySerializer, Version=5.3.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\BinarySerializer.5.3.1\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\BinarySerializer.dll</HintPath>
+    <Reference Include="BinarySerializer, Version=5.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BinarySerializer.5.4\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\BinarySerializer.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
