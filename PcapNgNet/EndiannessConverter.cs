@@ -10,6 +10,9 @@ namespace PcapNgNet
 
         public object Convert(object value, object parameter, BinarySerializationContext context)
         {
+            if (value == null)
+                return Endianness.Little;
+
             var indicator = System.Convert.ToUInt32(value);
 
             switch (indicator)
