@@ -27,6 +27,6 @@ namespace PcapNgNet
         
         [FieldOrder(6)]
         [FieldAlignment(4)]
-        public OptionSection<OptionCode> Options { get; set; }
+        public OptionSection<EnhancedPacketOptionCode> Options { get; set; }
     }
 }

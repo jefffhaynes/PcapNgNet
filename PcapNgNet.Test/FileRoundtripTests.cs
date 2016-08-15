@@ -23,6 +23,12 @@ namespace PcapNgNet.Test
         }
 
         [TestMethod]
+        public void RoundtripDifficultLeFiles()
+        {
+            RoundtripFiles("Files//LE//Difficult", true);
+        }
+
+        [TestMethod]
         public void RoundtripBasicBeFiles()
         {
             RoundtripFiles("Files//BE//Basic");

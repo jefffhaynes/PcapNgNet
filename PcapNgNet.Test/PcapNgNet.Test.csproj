@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BinarySerializer, Version=5.4.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\BinarySerializer.5.5-beta\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\BinarySerializer.dll</HintPath>
+    <Reference Include="BinarySerializer, Version=5.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BinarySerializer.5.5.2\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\BinarySerializer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -186,6 +186,15 @@
     </None>
     <None Include="Files\LE\Basic\test017.pcapng" />
     <None Include="Files\LE\Basic\test018.pcapng" />
+    <None Include="Files\LE\Difficult\test200.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Difficult\test201.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\LE\Difficult\test202.pcapng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +240,9 @@
     <Content Include="Files\LE\Basic\test016.txt" />
     <Content Include="Files\LE\Basic\test017.txt" />
     <Content Include="Files\LE\Basic\test018.txt" />
+    <Content Include="Files\LE\Difficult\test200.txt" />
+    <Content Include="Files\LE\Difficult\test201.txt" />
+    <Content Include="Files\LE\Difficult\test202.txt" />
   </ItemGroup>
   <ItemGroup />
   <Choose>

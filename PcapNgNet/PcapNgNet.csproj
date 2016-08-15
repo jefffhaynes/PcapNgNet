@@ -34,7 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="SectionHeaderBlock.cs" />
     <Compile Include="Block.cs" />
     <Compile Include="BlockBody.cs" />
     <Compile Include="BlockType.cs" />
@@ -52,6 +51,7 @@
     <Compile Include="NameResolutionBlockRecordIpv4Body.cs" />
     <Compile Include="NameResolutionBlockRecordIpv6Body.cs" />
     <Compile Include="NameResolutionBlockRecordType.cs" />
+    <Compile Include="Options\EnhancedPacketOptionCode.cs" />
     <Compile Include="Options\Option.cs" />
     <Compile Include="Options\InterfaceOptionCode.cs" />
     <Compile Include="Options\SectionOptionCode.cs" />
@@ -63,6 +63,7 @@
     <Compile Include="PcapNgSerializer.cs" />
     <Compile Include="SimplePacketBlockBody.cs" />
     <Compile Include="SummingValueConverter.cs" />
+    <Compile Include="UnknownBlockBody.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="nuget\PcapNgNet.dll.nuspec" />
@@ -72,8 +73,8 @@
     <None Include="nuget\nuget.exe" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="BinarySerializer, Version=5.4.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\BinarySerializer.5.5-beta\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\BinarySerializer.dll</HintPath>
+    <Reference Include="BinarySerializer, Version=5.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BinarySerializer.5.5.2\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\BinarySerializer.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
