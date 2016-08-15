@@ -8,11 +8,11 @@
     <projectUrl>https://github.com/jefffhaynes/PcapNgNet</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A reader/writer for PCAPNG files.</description>
-    <releaseNotes>Better option support.</releaseNotes>
+    <releaseNotes>Basic handling of big endian files.</releaseNotes>
     <tags>Pcap Pcapng</tags>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
     <dependencies>
-      <dependency id="BinarySerializer" version="5.3" />
+      <dependency id="BinarySerializer" version="5.5.2" />
     </dependencies>
   </metadata>
 </package>
