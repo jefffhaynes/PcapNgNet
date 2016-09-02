@@ -59,6 +59,13 @@ namespace PcapNgNet.Test
                 {
                     var pcap = serializer.Deserialize(stream);
 
+                    var unknownSection =
+                        pcap.Sections.SelectMany(section => section.Blocks)
+                            .Any(block => block.Body.GetType() == typeof (UnknownBlockBody));
+
+                    if(unknownSection)
+                        continue;
+
                     try
                     {
                         var memStream = new MemoryStream();
