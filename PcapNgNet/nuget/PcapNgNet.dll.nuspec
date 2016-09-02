@@ -8,7 +8,7 @@
     <projectUrl>https://github.com/jefffhaynes/PcapNgNet</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A reader/writer for PCAPNG files.</description>
-    <releaseNotes>Basic handling of big endian files.</releaseNotes>
+    <releaseNotes>Bug fixes.</releaseNotes>
     <tags>Pcap Pcapng</tags>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
     <dependencies>
