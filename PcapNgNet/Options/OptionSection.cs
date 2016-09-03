@@ -3,9 +3,13 @@ using BinarySerialization;
 
 namespace PcapNgNet.Options
 {
-    public class OptionSection<TCode>
+    public class OptionSection<TOptionField, TCode> where TOptionField : OptionFieldBase<TCode>
     {
         [ItemSerializeUntil("Code", OptionCode.End)]
-        public List<Option<TCode>> Options { get; set; }
+        public List<TOptionField> Options { get; set; }
+    }
+
+    public class OptionSection : OptionSection<OptionField<OptionCode>, OptionCode>
+    {
     }
 }

@@ -36,7 +36,7 @@ namespace PcapNgNet
         [FieldOrder(6)]
         [FieldAlignment(4)]
         [FieldEndianness("ByteOrderMagic", typeof(EndiannessConverter))]
-        public OptionSection<SectionOptionCode> Options { get; set; }
+        public OptionSection<SectionHeaderOptionField, SectionHeaderOptionCode> Options { get; set; }
 
         [FieldOrder(7)]
         [FieldEndianness("ByteOrderMagic", typeof(EndiannessConverter))]

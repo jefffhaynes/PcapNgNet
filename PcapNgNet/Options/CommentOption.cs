@@ -1,6 +1,6 @@
 ﻿namespace PcapNgNet.Options
 {
-    public abstract class Option
+    public class CommentOption : StringOption
     {
     }
 }

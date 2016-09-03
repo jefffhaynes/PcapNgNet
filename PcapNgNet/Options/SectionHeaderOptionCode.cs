@@ -1,6 +1,6 @@
 ﻿namespace PcapNgNet.Options
 {
-    public enum SectionOptionCode : ushort
+    public enum SectionHeaderOptionCode : ushort
     {
         End = OptionCode.End,
         Comment = OptionCode.Comment,
