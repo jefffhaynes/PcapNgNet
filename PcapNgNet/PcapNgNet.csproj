@@ -74,6 +74,15 @@
     <Compile Include="Options\InterfaceDescriptionTimestampOffsetOption.cs" />
     <Compile Include="Options\InterfaceDescriptionTimestampResolutionOption.cs" />
     <Compile Include="Options\InterfaceDescriptionTimeZoneOption.cs" />
+    <Compile Include="Options\InterfaceStatisticsOperatingSystemDropCountOption.cs" />
+    <Compile Include="Options\InterfaceStatisticsOptionCode.cs" />
+    <Compile Include="Options\InterfaceStatisticsOptionField.cs" />
+    <Compile Include="Options\InterfaceStatisticsEndTimeOption.cs" />
+    <Compile Include="Options\InterfaceStatisticsFilterAcceptCountOption.cs" />
+    <Compile Include="Options\InterfaceStatisticsPacketDeliveryCountOption.cs" />
+    <Compile Include="Options\InterfaceStatisticsPacketReceiveCountOption.cs" />
+    <Compile Include="Options\InterfaceStatisticsPacketDropCountOption.cs" />
+    <Compile Include="Options\InterfaceStatisticsStartTimeOption.cs" />
     <Compile Include="Options\Option.cs" />
     <Compile Include="Options\OptionField.cs" />
     <Compile Include="Options\InterfaceDescriptionOptionCode.cs" />
