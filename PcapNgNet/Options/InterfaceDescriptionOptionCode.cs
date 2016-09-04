@@ -1,13 +1,15 @@
 ﻿namespace PcapNgNet.Options
 {
-    public enum InterfaceOptionCode : ushort
+    public enum InterfaceDescriptionOptionCode : ushort
     {
         End = OptionCode.End,
         Comment = OptionCode.Comment,
         Name = 2,
         Description = 3,
-        Ip4Address = 4,
-        Ip6Adress = 5,
+        // ReSharper disable InconsistentNaming
+        IP4Address = 4,
+        IP6Address = 5,
+        // ReSharper restore InconsistentNaming
         MacAddress = 6,
         EuiAddress = 7,
         Speed = 8,

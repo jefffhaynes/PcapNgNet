@@ -6,7 +6,7 @@ namespace PcapNgNet
     public class NameResolutionBlockRecordIpv6Body : NameResolutionBlockRecordBody
     {
         [FieldOrder(0)]
-        public Ipv6Address Address { get; set; }
+        public IPv6Address Address { get; set; }
 
         [FieldOrder(1)]
         public List<string> DnsEntries { get; set; }

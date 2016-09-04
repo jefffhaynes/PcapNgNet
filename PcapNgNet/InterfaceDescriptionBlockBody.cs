@@ -16,6 +16,6 @@ namespace PcapNgNet
         
         [FieldOrder(3)]
         [FieldAlignment(4)]
-        public OptionSection<OptionField<InterfaceOptionCode>, InterfaceOptionCode> Options { get; set; }
+        public OptionSection<InterfaceDescriptionOptionField, InterfaceDescriptionOptionCode> Options { get; set; }
     }
 }
