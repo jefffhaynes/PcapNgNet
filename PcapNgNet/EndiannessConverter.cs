@@ -12,15 +12,12 @@ public class EndiannessConverter : IValueConverter
 
         var indicator = System.Convert.ToUInt32(value);
 
-        switch (indicator)
+        return indicator switch
         {
-            case LittleEndiannessMagic:
-                return Endianness.Little;
-            case BigEndiannessMagic:
-                return Endianness.Big;
-            default:
-                throw new InvalidOperationException("Invalid endian magic");
-        }
+            LittleEndiannessMagic => Endianness.Little,
+            BigEndiannessMagic => Endianness.Big,
+            _ => throw new InvalidOperationException("Invalid endian magic"),
+        };
     }
 
     public object ConvertBack(object value, object parameter, BinarySerializationContext context)
