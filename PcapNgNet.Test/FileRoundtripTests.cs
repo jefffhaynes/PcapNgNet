@@ -55,32 +55,30 @@ public class FileRoundtripTests
         {
             Debug.WriteLine($"Roundtrip for {file}");
 
-            using (var stream = new FileStream(file, FileMode.Open, FileAccess.Read))
+            using var stream = new FileStream(file, FileMode.Open, FileAccess.Read);
+            var pcap = serializer.Deserialize(stream);
+
+            var unknownSection =
+                pcap.Sections.SelectMany(section => section.Blocks)
+                    .Any(block => block.Body.GetType() == typeof(UnknownBlockBody));
+
+            if (unknownSection)
+                continue;
+
+            try
             {
-                var pcap = serializer.Deserialize(stream);
+                var memStream = new MemoryStream();
+                serializer.Serialize(memStream, pcap);
 
-                var unknownSection =
-                    pcap.Sections.SelectMany(section => section.Blocks)
-                        .Any(block => block.Body.GetType() == typeof(UnknownBlockBody));
+                stream.Position = 0;
+                memStream.Position = 0;
 
-                if (unknownSection)
-                    continue;
-
-                try
-                {
-                    var memStream = new MemoryStream();
-                    serializer.Serialize(memStream, pcap);
-
-                    stream.Position = 0;
-                    memStream.Position = 0;
-
-                    AssertAreEqual(stream, memStream);
-                }
-                catch
-                {
-                    if (!ignoreSerializationErrors)
-                        throw;
-                }
+                AssertAreEqual(stream, memStream);
+            }
+            catch
+            {
+                if (!ignoreSerializationErrors)
+                    throw;
             }
         }
     }

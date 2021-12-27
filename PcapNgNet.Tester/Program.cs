@@ -15,10 +15,8 @@ class Program
         serializer.MemberDeserializing += OnMemberDeserializing;
         serializer.MemberDeserialized += OnMemberDeserialized;
 
-        using (var stream = new FileStream(args[0], FileMode.Open, FileAccess.Read))
-        {
-            var pcap = serializer.Deserialize<PcapNg>(stream);
-        }
+        using var stream = new FileStream(args[0], FileMode.Open, FileAccess.Read);
+        var pcap = serializer.Deserialize<PcapNg>(stream);
     }
 
     private static void OnMemberSerializing(object sender, MemberSerializingEventArgs e)
