@@ -1,20 +1,16 @@
-﻿using System.IO;
-using BinarySerialization;
+﻿namespace PcapNgNet;
 
-namespace PcapNgNet
+public class PcapNgSerializer
 {
-    public class PcapNgSerializer
+    public BinarySerializer Serializer { get; } = new BinarySerializer();
+
+    public void Serialize(Stream stream, PcapNg pcapNg)
     {
-        public BinarySerializer Serializer { get; } = new BinarySerializer();
+        Serializer.Serialize(stream, pcapNg);
+    }
 
-        public void Serialize(Stream stream, PcapNg pcapNg)
-        {
-            Serializer.Serialize(stream, pcapNg);
-        }
-
-        public PcapNg Deserialize(Stream stream)
-        {
-            return Serializer.Deserialize<PcapNg>(stream);
-        }
+    public PcapNg Deserialize(Stream stream)
+    {
+        return Serializer.Deserialize<PcapNg>(stream);
     }
 }

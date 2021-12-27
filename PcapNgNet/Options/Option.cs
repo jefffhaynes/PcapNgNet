@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public abstract class Option
 {
-    public abstract class Option
-    {
-    }
 }

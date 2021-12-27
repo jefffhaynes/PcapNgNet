@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class InterfaceDescriptionTimeZoneOption : IntegerOption<int>
 {
-    public class InterfaceDescriptionTimeZoneOption : IntegerOption<int>
-    {
-    }
 }

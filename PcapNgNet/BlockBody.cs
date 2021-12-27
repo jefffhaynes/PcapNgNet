@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet
+﻿namespace PcapNgNet;
+
+public abstract class BlockBody
 {
-    public abstract class BlockBody
-    {
-    }
 }

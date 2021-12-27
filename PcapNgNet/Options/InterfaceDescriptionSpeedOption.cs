@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class InterfaceDescriptionSpeedOption : IntegerOption<ulong>
 {
-    public class InterfaceDescriptionSpeedOption : IntegerOption<ulong>
-    {
-    }
 }

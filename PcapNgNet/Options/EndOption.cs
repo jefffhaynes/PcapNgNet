@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class EndOption : Option
 {
-    public class EndOption : Option
-    {
-    }
 }

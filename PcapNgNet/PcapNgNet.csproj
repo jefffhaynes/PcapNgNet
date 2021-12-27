@@ -9,7 +9,7 @@
     <Description>A reader/writer for PCAPNG files.</Description>
     <Authors>Jeff Haynes</Authors>
     <Company />
-    <PackageTags>PCapNg</PackageTags>
+    <PackageTags>PcapNg</PackageTags>
     <PackageReleaseNotes>Updated serializer, switched to .NET standard, new language features, use new project SDK format.</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/jefffhaynes/PcapNgNet</PackageProjectUrl>
     <PackageLicenseUrl>https://opensource.org/licenses/mit-license.php</PackageLicenseUrl>

@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class CommentOption : StringOption
 {
-    public class CommentOption : StringOption
-    {
-    }
 }

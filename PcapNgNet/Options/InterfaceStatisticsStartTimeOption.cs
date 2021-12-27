@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class InterfaceStatisticsStartTimeOption : IntegerOption<ulong>
 {
-    public class InterfaceStatisticsStartTimeOption : IntegerOption<ulong>
-    {
-    }
 }

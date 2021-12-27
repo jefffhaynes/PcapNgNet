@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class InterfaceDescriptionTimestampResolutionOption : IntegerOption<byte>
 {
-    public class InterfaceDescriptionTimestampResolutionOption : IntegerOption<byte>
-    {
-    }
 }

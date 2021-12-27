@@ -1,7 +1,6 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class IntegerOption<T> : Option
 {
-    public class IntegerOption<T> : Option
-    {
-        public T Value { get; set; }
-    }
+    public T Value { get; set; }
 }

@@ -1,10 +1,7 @@
-﻿using BinarySerialization;
+﻿namespace PcapNgNet.Options;
 
-namespace PcapNgNet.Options
+public class StringOption : Option
 {
-    public class StringOption : Option
-    {
-        [SerializeAs(SerializedType.SizedString)]
-        public string Value { get; set; }
-    }
+    [SerializeAs(SerializedType.SizedString)]
+    public string Value { get; set; }
 }

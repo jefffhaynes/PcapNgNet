@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class InterfaceDescriptionTimestampOffsetOption : IntegerOption<ulong>
 {
-    public class InterfaceDescriptionTimestampOffsetOption : IntegerOption<ulong>
-    {
-    }
 }

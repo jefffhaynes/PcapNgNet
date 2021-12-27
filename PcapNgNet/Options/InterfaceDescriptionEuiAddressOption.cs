@@ -1,10 +1,7 @@
-﻿using BinarySerialization;
+﻿namespace PcapNgNet.Options;
 
-namespace PcapNgNet.Options
+public class InterfaceDescriptionEuiAddressOption : Option
 {
-    public class InterfaceDescriptionEuiAddressOption : Option
-    {
-        [FieldLength(8)]
-        public byte[] EuiAddress { get; set; }
-    }
+    [FieldLength(8)]
+    public byte[] EuiAddress { get; set; }
 }

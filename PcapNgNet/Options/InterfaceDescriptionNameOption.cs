@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class InterfaceDescriptionNameOption : StringOption
 {
-    public class InterfaceDescriptionNameOption : StringOption
-    {
-    }
 }
