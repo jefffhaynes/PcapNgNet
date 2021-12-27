@@ -1,7 +1,6 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class UnknownOption : Option
 {
-    public class UnknownOption : Option
-    {
-        public byte[] Content { get; set; }
-    }
+    public byte[] Content { get; set; }
 }

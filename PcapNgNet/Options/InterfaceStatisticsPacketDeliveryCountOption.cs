@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class InterfaceStatisticsPacketDeliveryCountOption : IntegerOption<ulong>
 {
-    public class InterfaceStatisticsPacketDeliveryCountOption : IntegerOption<ulong>
-    {
-    }
 }

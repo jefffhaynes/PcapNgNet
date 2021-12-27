@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class InterfaceStatisticsFilterAcceptCountOption : IntegerOption<ulong>
 {
-    public class InterfaceStatisticsFilterAcceptCountOption : IntegerOption<ulong>
-    {
-    }
 }

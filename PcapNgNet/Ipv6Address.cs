@@ -1,12 +1,9 @@
-﻿using BinarySerialization;
+﻿namespace PcapNgNet;
 
-namespace PcapNgNet
-{
 // ReSharper disable InconsistentNaming
-    public class IPv6Address
+public class IPv6Address
 // ReSharper restore InconsistentNaming
-    {
-        [FieldLength(16)]
-        public byte[] Address { get; set; }
-    }
+{
+    [FieldLength(16)]
+    public byte[] Address { get; set; }
 }

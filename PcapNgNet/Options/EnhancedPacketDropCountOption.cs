@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class EnhancedPacketDropCountOption : IntegerOption<ulong>
 {
-    public class EnhancedPacketDropCountOption : IntegerOption<ulong>
-    {
-    }
 }

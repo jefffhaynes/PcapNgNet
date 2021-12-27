@@ -1,7 +1,6 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class EnhancedPacketFlagsOption : Option
 {
-    public class EnhancedPacketFlagsOption : Option
-    {
-        public EnhancedPacketFlags Flags { get; set; }
-    }
+    public EnhancedPacketFlags Flags { get; set; }
 }

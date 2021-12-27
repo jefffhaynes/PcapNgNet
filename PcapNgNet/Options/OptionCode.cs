@@ -1,8 +1,7 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public enum OptionCode : ushort
 {
-    public enum OptionCode : ushort
-    {
-        End = 0x0,
-        Comment = 0x1
-    }
+    End = 0x0,
+    Comment = 0x1
 }

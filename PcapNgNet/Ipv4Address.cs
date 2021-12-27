@@ -1,9 +1,8 @@
-﻿namespace PcapNgNet
-{
+﻿namespace PcapNgNet;
+
 // ReSharper disable InconsistentNaming
-    public class IPv4Address
+public class IPv4Address
 // ReSharper restore InconsistentNaming
-    {
-        public int Address { get; set; }
-    }
+{
+    public int Address { get; set; }
 }

@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class InterfaceDescriptionFrameCheckSequenceLengthOption : IntegerOption<byte>
 {
-    public class InterfaceDescriptionFrameCheckSequenceLengthOption : IntegerOption<byte>
-    {
-    }
 }

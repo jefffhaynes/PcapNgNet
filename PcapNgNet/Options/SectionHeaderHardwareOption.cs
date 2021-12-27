@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class SectionHeaderHardwareOption : StringOption
 {
-    public class SectionHeaderHardwareOption : StringOption
-    {
-    }
 }

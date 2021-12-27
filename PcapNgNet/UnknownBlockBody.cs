@@ -1,7 +1,6 @@
-﻿namespace PcapNgNet
+﻿namespace PcapNgNet;
+
+public class UnknownBlockBody : BlockBody
 {
-    public class UnknownBlockBody : BlockBody
-    {
-        public byte[] Contents { get; set; }
-    }
+    public byte[] Contents { get; set; }
 }

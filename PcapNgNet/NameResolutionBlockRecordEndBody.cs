@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet
+﻿namespace PcapNgNet;
+
+public class NameResolutionBlockRecordEndBody : NameResolutionBlockRecordBody
 {
-    public class NameResolutionBlockRecordEndBody : NameResolutionBlockRecordBody
-    {
-    }
 }

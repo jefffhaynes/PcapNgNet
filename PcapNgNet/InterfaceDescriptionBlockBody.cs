@@ -1,21 +1,17 @@
-﻿using BinarySerialization;
-using PcapNgNet.Options;
+﻿namespace PcapNgNet;
 
-namespace PcapNgNet
+public class InterfaceDescriptionBlockBody : BlockBody
 {
-    public class InterfaceDescriptionBlockBody : BlockBody
-    {
-        [FieldOrder(0)]
-        public LinkType LinkType { get; set; }
+    [FieldOrder(0)]
+    public LinkType LinkType { get; set; }
 
-        [FieldOrder(1)]
-        public ushort Reserved { get; set; }
+    [FieldOrder(1)]
+    public ushort Reserved { get; set; }
 
-        [FieldOrder(2)]
-        public int Length { get; set; }
-        
-        [FieldOrder(3)]
-        [FieldAlignment(4)]
-        public OptionSection<InterfaceDescriptionOptionField, InterfaceDescriptionOptionCode> Options { get; set; }
-    }
+    [FieldOrder(2)]
+    public int Length { get; set; }
+
+    [FieldOrder(3)]
+    [FieldAlignment(4)]
+    public OptionSection<InterfaceDescriptionOptionField, InterfaceDescriptionOptionCode> Options { get; set; }
 }

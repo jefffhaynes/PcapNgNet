@@ -1,10 +1,7 @@
-﻿using BinarySerialization;
+﻿namespace PcapNgNet.Options;
 
-namespace PcapNgNet.Options
+public class InterfaceDescriptionMacAddressOption : Option
 {
-    public class InterfaceDescriptionMacAddressOption : Option
-    {
-        [FieldLength(6)]
-        public byte[] MacAddress { get; set; }
-    }
+    [FieldLength(6)]
+    public byte[] MacAddress { get; set; }
 }

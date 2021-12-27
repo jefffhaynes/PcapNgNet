@@ -1,6 +1,5 @@
-﻿namespace PcapNgNet.Options
+﻿namespace PcapNgNet.Options;
+
+public class InterfaceStatisticsPacketReceiveCountOption : IntegerOption<ulong>
 {
-    public class InterfaceStatisticsPacketReceiveCountOption : IntegerOption<ulong>
-    {
-    }
 }

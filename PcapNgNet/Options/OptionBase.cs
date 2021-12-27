@@ -1,13 +1,10 @@
-﻿using BinarySerialization;
+﻿namespace PcapNgNet.Options;
 
-namespace PcapNgNet.Options
+public class OptionBase
 {
-    public class OptionBase
-    {
-        [FieldOrder(0)]
-        public OptionCode Code { get; set; }
+    [FieldOrder(0)]
+    public OptionCode Code { get; set; }
 
-        [FieldOrder(1)]
-        public ushort Length { get; set; }
-    }
+    [FieldOrder(1)]
+    public ushort Length { get; set; }
 }

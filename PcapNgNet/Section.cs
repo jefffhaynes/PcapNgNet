@@ -1,16 +1,12 @@
-﻿using System.Collections.Generic;
-using BinarySerialization;
+﻿namespace PcapNgNet;
 
-namespace PcapNgNet
+public class Section
 {
-    public class Section
-    {
-        [FieldOrder(0)]
-        public SectionHeader Header { get; set; }
+    [FieldOrder(0)]
+    public SectionHeader Header { get; set; }
 
-        [FieldOrder(1)]
-        [FieldEndianness("Header.ByteOrderMagic", typeof(EndiannessConverter))]
-        [ItemSerializeUntil("Type", BlockType.SectionHeader, LastItemMode = LastItemMode.Defer)]
-        public List<Block> Blocks { get; set; }
-    }
+    [FieldOrder(1)]
+    [FieldEndianness("Header.ByteOrderMagic", typeof(EndiannessConverter))]
+    [ItemSerializeUntil("Type", BlockType.SectionHeader, LastItemMode = LastItemMode.Defer)]
+    public List<Block> Blocks { get; set; }
 }

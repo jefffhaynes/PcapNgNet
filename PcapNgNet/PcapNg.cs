@@ -1,9 +1,6 @@
-﻿using System.Collections.Generic;
+﻿namespace PcapNgNet;
 
-namespace PcapNgNet
+public class PcapNg
 {
-    public class PcapNg
-    {
-        public List<Section> Sections { get; set; } 
-    }
+    public List<Section> Sections { get; set; }
 }

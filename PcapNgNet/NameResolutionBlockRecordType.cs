@@ -1,9 +1,8 @@
-﻿namespace PcapNgNet
+﻿namespace PcapNgNet;
+
+public enum NameResolutionBlockRecordType : ushort
 {
-    public enum NameResolutionBlockRecordType : ushort
-    {
-        EndOfRecord = 0,
-        Ipv4Record = 1,
-        Ipv6Record = 2
-    }
+    EndOfRecord = 0,
+    Ipv4Record = 1,
+    Ipv6Record = 2
 }
